@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/JeremiePiard_11_12082022/static/js/main.b1d5f713.js",
+    "main.js": "/JeremiePiard_11_12082022/static/js/main.104fcdb4.js",
     "static/media/logo.svg": "/JeremiePiard_11_12082022/static/media/logo.953d646c0e0bb6d69d138e112600468d.svg",
     "index.html": "/JeremiePiard_11_12082022/index.html",
-    "main.b1d5f713.js.map": "/JeremiePiard_11_12082022/static/js/main.b1d5f713.js.map"
+    "main.104fcdb4.js.map": "/JeremiePiard_11_12082022/static/js/main.104fcdb4.js.map"
   },
   "entrypoints": [
-    "static/js/main.b1d5f713.js"
+    "static/js/main.104fcdb4.js"
   ]
 }
