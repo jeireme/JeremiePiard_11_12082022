@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Home() {
+function Homepage() {
   return (
     <div>Accueil (en construction) (GitHub Page TEST)</div>
   )
 }
 
-export default Home
+export default Homepage
