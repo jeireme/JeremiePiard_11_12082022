@@ -9,7 +9,11 @@ const DropdownContainer = styled.div`
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 100;
+  @media screen and (max-width: 1300px) {
+    font-size: 20px;
+  }
 `;
+
 const TitleContainer = styled.div`
   background-color: #ff6060;
   display: flex;
@@ -20,6 +24,9 @@ const TitleContainer = styled.div`
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
+  @media screen and (max-width: 600px) {
+    height: 20px;
+  }
 `;
 
 const Title = styled.div``;

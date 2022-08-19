@@ -8,7 +8,13 @@ import styled from "styled-components";
 const datas = aboutDatas;
 
 const DropdownContainer = styled.div`
-  margin-bottom: 200px;
+  margin: 0 auto 200px auto;
+  @media screen and (max-width: 1300px) {
+    width: 83vw;
+    @media screen and (max-width: 800px) {
+      width: 90vw;
+    }
+  }
 `;
 
 function About() {

@@ -5,9 +5,26 @@ import styled from "styled-components";
 const CarouselContainer = styled.div`
   background-color: lightgrey;
   height: 415px;
-  margin-top: 15px;
+  margin: 15px auto 0 auto;
   position: relative;
-  border-radius: 12px;
+  border-radius: 25px;
+  width: 97%;
+  @media screen and (max-width: 1300px) {
+    width: 82vw;
+    @media screen and (max-width: 800px) {
+      border-radius: 12px;
+      width: 90vw;
+      height: 70vw;
+    }
+  }
+`;
+
+const CarouselGallery = styled.div`
+  border-radius: 25px;
+
+  @media screen and (max-width: 800px) {
+    border-radius: 12px;
+  }
 `;
 
 const ArrowLeft = styled.div`
@@ -24,8 +41,11 @@ const ArrowLeft = styled.div`
   z-index: 1;
   top: 50%;
   left: 0%;
-  transform: translate(14%, -41%);
+  transform: translate(0, -41%);
   cursor: pointer;
+  @media screen and (max-width: 800px) {
+    width: 30px;
+  }
 `;
 
 const ArrowRight = styled.div`
@@ -42,8 +62,12 @@ const ArrowRight = styled.div`
   z-index: 1;
   top: 50%;
   left: 100%;
-  transform: translate(-25%, 60%);
+  transform: translate(0, 60%);
   cursor: pointer;
+  @media screen and (max-width: 800px) {
+    width: 30px;
+    transform: translate(0, 0);
+  }
 `;
 
 const IndexOfPictures = styled.div`
@@ -58,7 +82,6 @@ const IndexOfPictures = styled.div`
 `;
 
 function Carousel({ pictures }) {
-
   const [index, setIndex] = useState(0);
 
   const showControls = pictures.length > 1;
@@ -67,7 +90,6 @@ function Carousel({ pictures }) {
     backgroundImage: `url(${pictures[index]})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    borderRadius: "25px",
     width: "100%",
     height: "100%",
   };
@@ -88,7 +110,7 @@ function Carousel({ pictures }) {
         onClick={previousPicture}
         style={showControls ? { display: "block" } : { display: "none" }}
       ></ArrowLeft>
-      <div style={carouselControls}></div>
+      <CarouselGallery style={carouselControls}></CarouselGallery>
       <ArrowRight
         onClick={nextPicture}
         style={showControls ? { display: "block" } : { display: "none" }}
