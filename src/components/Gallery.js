@@ -81,7 +81,7 @@ const IndexOfPictures = styled.div`
   position: absolute;
 `;
 
-function Carousel({ pictures }) {
+function Gallery({ pictures }) {
   const [index, setIndex] = useState(0);
 
   const showControls = pictures.length > 1;
@@ -122,4 +122,4 @@ function Carousel({ pictures }) {
   );
 }
 
-export default Carousel;
+export default Gallery;

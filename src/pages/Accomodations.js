@@ -3,7 +3,7 @@ import { useLocation /*useParams*/ } from "react-router-dom";
 import accomodationsDatas from "../data/accomodationsDatas.json";
 import ErrorPage from "./ErrorPage";
 import styled from "styled-components";
-import Carousel from "../components/Carousel";
+import Gallery from "../components/Gallery";
 import Tag from "../components/Tag";
 import Dropdown from "../components/Dropdown";
 import Footer from "../components/Footer";
@@ -29,7 +29,7 @@ const FlexTagsRatingContainer = styled.div`
   align-items: flex-start;
   margin: 0 auto 20px auto;
   width: 97%;
-
+  height: 40px;
   @media screen and (max-width: 1300px) {
     width: 82vw;
     @media screen and (max-width: 800px) {
@@ -139,7 +139,7 @@ function Accomodations() {
 
   return (
     <>
-      <Carousel pictures={datas.pictures} />
+      <Gallery pictures={datas.pictures} />
       <FlexTitleProfileContainer>
         <TitleContainer>
           <Title>{datas.title}</Title>
