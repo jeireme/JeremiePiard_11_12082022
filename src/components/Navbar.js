@@ -1,6 +1,5 @@
 import React from "react";
-// import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import styled from "styled-components";
 
@@ -9,45 +8,40 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
-
-const LogoContainer = styled.div`
-  /* border: 10px solid pink; // * Visuel d'aide */
+  font-size: 24px;
+  font-weight: 300;
 `;
 
 const LinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 260px;
+  margin-top: -10px;
   /* border: 10px solid pink; // * Visuel d'aide */
 `;
 
-const StyledLinkUnderlined = styled(Link)`
-  color: #ff6060;
-  text-decoration: underline;
-  font-size: 18px;
-`;
-
-const StyledLink = styled(Link)`
-  color: #ff6060;
-  text-decoration: none;
-  font-size: 18px;
-`;
-
 function Navbar() {
+  const navLinkStyle = ({ isActive }) => {
+    return {
+      color: "#ff6060",
+      textDecoration: isActive ? "underline" : "none",
+    };
+  };
+
   return (
     <Nav>
-      <LogoContainer>
-        <StyledLink to="/JeremiePiard_11_12082022/" className="navbar-logo">
+      <div>
+        <NavLink to="/JeremiePiard_11_12082022/" className="navbar-logo">
           <img src={logo} alt="Logo Kasa" />
-        </StyledLink>
-      </LogoContainer>
+        </NavLink>
+      </div>
       <LinkContainer>
-        <StyledLinkUnderlined to="/JeremiePiard_11_12082022/">
-          {" "}
-          Accueil{" "}
-        </StyledLinkUnderlined>
-        <StyledLink to="/JeremiePiard_11_12082022/about"> À Propos </StyledLink>
+        <NavLink style={navLinkStyle} to="/JeremiePiard_11_12082022/">
+          Accueil
+        </NavLink>
+        <NavLink style={navLinkStyle} to="/JeremiePiard_11_12082022/about">
+          À Propos
+        </NavLink>
       </LinkContainer>
     </Nav>
   );

@@ -10,10 +10,12 @@ import styled from "styled-components";
 const AppContainer = styled.div`
   /* border: 7px solid purple; // * Visuel d'aide */
   /* background-color: green; // * Visuel d'aide */
+  color: #ff6060;
+
   font-family: "Montserrat";
   max-width: 1240px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
 `;
 
 function App() {

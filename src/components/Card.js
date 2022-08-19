@@ -1,27 +1,37 @@
 import React from "react";
 import styled from "styled-components";
 
-const CardContainer = styled.div`
-  background-color: #FF6060;
+const ImageContainer = styled.div`
+  /* border: red solid 1px; // ? */
+  margin-top: -20px; // ? Aide débug de l'affichage décalé des cards
   border-radius: 10px;
-  width: 340px;
-  height: 340px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 const CardTitle = styled.div`
   position: relative;
-  color: white;
-  margin-left: 20px;
+  color: #FFF;
+  margin: 20px;
   top: 82%;
   line-height: 22px;
-  font-weight: 100;
+  font-weight: 300;
+  height: 50px;
+  display: flex;
+  align-items: center;
 `;
 
-function Card() {
+function Card(props) {
   return (
-    <CardContainer>
-      <CardTitle>Titre de la <br/> location</CardTitle>
-    </CardContainer>
+      <ImageContainer
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(${props.cover})`,
+        }}
+        >
+          <CardTitle>{props.title}</CardTitle>
+      </ImageContainer>
   );
 }
 
