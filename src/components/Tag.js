@@ -12,7 +12,6 @@ const TagContainer = styled.div`
   `;
 
 const Name = styled.div`
-  /* border: blue solid 1px; */
   min-width: fit-content;
   text-align: center;
   margin: 0 30px;

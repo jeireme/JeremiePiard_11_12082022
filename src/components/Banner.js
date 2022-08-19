@@ -4,7 +4,6 @@ import imgBanner from "../assets/imgBanner.png";
 
 const BannerContainer = styled.div`
   height: 223px;
-  /* border: 5px solid black; // * Visuel d'aide */
   border-radius: 25px;
   background-image: url(${imgBanner});
   background-repeat: no-repeat;

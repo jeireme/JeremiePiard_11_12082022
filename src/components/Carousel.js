@@ -58,7 +58,6 @@ const IndexOfPictures = styled.div`
 `;
 
 function Carousel({ pictures }) {
-  // const pictures = datas.pictures;
 
   const [index, setIndex] = useState(0);
 

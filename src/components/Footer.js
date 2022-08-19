@@ -5,7 +5,6 @@ import logoWhite from "../assets/logo-white.svg";
 const FooterContainer = styled.div`
   background-color: black;
   margin-top: 50px;
-  /* width: 100%; */
   height: 180px;
   color: white;
   display: flex;

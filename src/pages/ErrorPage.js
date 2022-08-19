@@ -9,7 +9,6 @@ const ErrorContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 900px;
-  /* background-color: pink; */
 `;
 
 const Error404 = styled.div`

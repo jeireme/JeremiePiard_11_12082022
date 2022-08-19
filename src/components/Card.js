@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ImageContainer = styled.div`
-  /* border: red solid 1px; // ? */
-  margin-top: -20px; // ? Aide débug de l'affichage décalé des cards
+  margin-top: -20px; // ? Débug de l'affichage décalé des cards
   border-radius: 10px;
   width: 100%;
   height: 100%;

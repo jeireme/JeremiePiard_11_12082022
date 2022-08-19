@@ -4,7 +4,8 @@ import redStar from "../assets/redStar.svg";
 import greyStar from "../assets/greyStar.svg";
 
 const StarsContainer = styled.div`
-display: flex`;
+  display: flex;
+`;
 
 const RedStar = styled.div`
   background-image: url(${redStar});
@@ -19,16 +20,9 @@ const GreyStars = styled.div`
 `;
 
 function Rating({ number }) {
-  console.clear();
-
+  
   const nbOfRedStar = number;
-  //   console.log("REDSTAR : " + nbOfRedStar);
-
   const nbOfGreyStar = 5 - nbOfRedStar;
-  //   console.log("GREYSTAR : " + nbOfGreyStar);
-
-  console.log("Array ?");
-  console.log(Array.from({ length: nbOfRedStar }));
 
   return (
     <StarsContainer>

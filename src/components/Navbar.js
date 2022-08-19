@@ -4,7 +4,6 @@ import logo from "../assets/logo.svg";
 import styled from "styled-components";
 
 const Nav = styled.nav`
-  /* border: 7px solid #1c6ea4; // * Visuel d'aide */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +16,6 @@ const LinkContainer = styled.div`
   justify-content: space-between;
   width: 260px;
   margin-top: -10px;
-  /* border: 10px solid pink; // * Visuel d'aide */
 `;
 
 function Navbar() {

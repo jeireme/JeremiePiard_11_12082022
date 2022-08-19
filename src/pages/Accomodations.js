@@ -10,7 +10,6 @@ import Footer from "../components/Footer";
 import Rating from "../components/Rating";
 
 const FlexContainer = styled.div`
-  /* border: green solid 1px; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -24,7 +23,6 @@ const TitleContainer = styled.div`
 const Title = styled.div`
   font-size: 36px;
   font-weight: 300;
-  /* letter-spacing: 1px; */
 `;
 
 const Location = styled.div`
@@ -34,7 +32,6 @@ const Location = styled.div`
 `;
 
 const ProfileContainer = styled.div`
-  /* border: pink solid 1px; */
   margin-top: 5px;
   display: flex;
   height: 100px;
@@ -42,7 +39,6 @@ const ProfileContainer = styled.div`
 `;
 
 const Name = styled.div`
-  /* border: brown solid 1px; */
   font-size: 18px;
   margin-right: 10px;
   word-spacing: 1000px;
@@ -68,12 +64,6 @@ const DropdownContainer = styled.div`
   margin-top: 0px;
   width: 582px;
   min-height: 350px;
-  /* border: pink solid 1px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 80px;
-  justify-content: start;
-  align-content: start; */
 `;
 
 function Accomodations() {
@@ -100,9 +90,7 @@ function Accomodations() {
           <Location>{datas.location}</Location>
         </TitleContainer>
         <ProfileContainer>
-          {/* <div style={{ display: `table-caption` }}> */}
           <Name>{datas.host.name}</Name>
-          {/* </div> */}
           <Picture
             style={{ backgroundImage: `url(${datas.host.picture})` }}
           ></Picture>

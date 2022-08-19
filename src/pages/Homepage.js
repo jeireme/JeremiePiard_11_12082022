@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import accomodationsDatas from "../data/accomodationsDatas.json";
 
 const CardsContainer = styled.div`
-  /* border: pink solid 2px; */
   background-color: #f6f6f6;
   margin-top: 40px;
   padding: 50px;
@@ -19,7 +18,7 @@ const CardsContainer = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  /* border: blue solid 1px; // ? Aide débug de l'affichage décalé des cards */
+  /* border: blue solid 1px; // ? Débug de l'affichage décalé des cards */
   text-decoration: none;
   width: 340px;
   height: 340px;

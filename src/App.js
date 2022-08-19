@@ -6,12 +6,10 @@ import Homepage from "./pages/Homepage";
 import Accomodations from "./pages/Accomodations";
 import ErrorPage from "./pages/ErrorPage";
 import styled from "styled-components";
+import ScrollToTop from "./components/ScrollToTop";
 
 const AppContainer = styled.div`
-  /* border: 7px solid purple; // * Visuel d'aide */
-  /* background-color: green; // * Visuel d'aide */
   color: #ff6060;
-
   font-family: "Montserrat";
   max-width: 1240px;
   margin: auto;
@@ -22,6 +20,7 @@ function App() {
   return (
     <AppContainer>
       <Router>
+        <ScrollToTop/>
         <Navbar />
         <Routes>
           <Route

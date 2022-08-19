@@ -26,10 +26,8 @@ const Title = styled.div``;
 
 const Icon = styled.div`
   display: flex;
-  /* margin-right: 5px; */
   rotate: 180deg;
   transition: rotate 0.3s ease;
-  /* border: green solid 2px; */
 `;
 
 const TextContainer = styled.div`
@@ -37,7 +35,6 @@ const TextContainer = styled.div`
   border-radius: 5px;
   padding: 0px 20px;
   height: 0px;
-  /* border: blue solid 2px; */
   overflow: hidden;
   transition: height 0.4s ease;
 `;
@@ -45,7 +42,7 @@ const TextContainer = styled.div`
 function Dropdown({ title, description, equipments }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isEquipment, setIsEquipment] = useState(equipments ? true : false);
-  const textContainerRef = useRef(); // pour déterminer la height via scrollHeight APRÈS le render
+  const textContainerRef = useRef(); // * 1/2 On veut récupère la height d'un contenu caché via scrollHeight APRÈS le render
 
   if (Array.isArray(description)) description = description.join("\n");
 
@@ -61,7 +58,7 @@ function Dropdown({ title, description, equipments }) {
         ref={textContainerRef}
         style={
           isOpen
-            ? { height: textContainerRef.current.scrollHeight + "px" }
+            ? { height: textContainerRef.current.scrollHeight + "px" } // * 2/2 hidden height = scrollHeight
             : { height: "0px" }
         }
       >
