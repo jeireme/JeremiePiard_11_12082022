@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/JeremiePiard_11_12082022/static/js/main.7d3b5a55.js",
+    "main.js": "/JeremiePiard_11_12082022/static/js/main.41cf47c2.js",
     "static/media/imgBanner.png": "/JeremiePiard_11_12082022/static/media/imgBanner.bd29b9024d8a24212408.png",
     "static/media/imgBannerAbout.png": "/JeremiePiard_11_12082022/static/media/imgBannerAbout.dabd6b5dd54e1e84e59b.png",
     "static/media/logo.svg": "/JeremiePiard_11_12082022/static/media/logo.953d646c0e0bb6d69d138e112600468d.svg",
@@ -9,9 +9,9 @@
     "static/media/arrow.svg": "/JeremiePiard_11_12082022/static/media/arrow.ecf1488896136f153bb1ae871e39b72d.svg",
     "static/media/greyStar.svg": "/JeremiePiard_11_12082022/static/media/greyStar.38752bcafc1045fa6b545169fb0eb2eb.svg",
     "static/media/redStar.svg": "/JeremiePiard_11_12082022/static/media/redStar.a21f8abfc51a23975832b769119429bd.svg",
-    "main.7d3b5a55.js.map": "/JeremiePiard_11_12082022/static/js/main.7d3b5a55.js.map"
+    "main.41cf47c2.js.map": "/JeremiePiard_11_12082022/static/js/main.41cf47c2.js.map"
   },
   "entrypoints": [
-    "static/js/main.7d3b5a55.js"
+    "static/js/main.41cf47c2.js"
   ]
 }
