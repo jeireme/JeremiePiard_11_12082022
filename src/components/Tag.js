@@ -8,7 +8,7 @@ const TagContainer = styled.div`
   align-items: center;
   height: 25px;
   border-radius: 10px;
-  margin: 5px 10px 5px 0px;
+  margin: 5px 10px 0px 0px;
   @media screen and (max-width: 800px) {
     border-radius: 5px;
     height: 20px;
@@ -27,7 +27,7 @@ const Name = styled.div`
   white-space: nowrap;
   @media screen and (max-width: 800px) {
     font-size: 12px;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 `;
 

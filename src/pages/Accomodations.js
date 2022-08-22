@@ -17,13 +17,13 @@ const FlexDropdownContainer = styled.div`
   width: 97%;
   @media screen and (max-width: 1300px) {
     width: 82vw;
-    margin-top: 30px;
+    margin-top: 40px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     @media screen and (max-width: 800px) {
       width: 90vw;
-      margin-top: 40px;
+      margin-top: 30px;
     }
   }
 `;
@@ -38,7 +38,7 @@ const FlexTagsRatingContainer = styled.div`
   @media screen and (max-width: 1300px) {
     width: 82vw;
     @media screen and (max-width: 800px) {
-      height: 60px;
+      height: fit-content;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
@@ -128,11 +128,18 @@ const TagsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
+  @media screen and (max-width: 800px) {
+    width: 90vw;
+    height: 25px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 `;
 
 const RateContainer = styled.div`
+  height: fit-content;
   @media screen and (max-width: 800px) {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 `;
 
