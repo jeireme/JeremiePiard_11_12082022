@@ -16,7 +16,7 @@ const ErrorContainer = styled.div`
 
 const Error404 = styled.div`
   font-size: 288px;
-  font-weight: bold;
+  font-weight: 700;
   @media screen and (max-width: 1300px) {
     font-size: 200px;
     @media screen and (max-width: 800px) {
@@ -28,6 +28,7 @@ const Error404 = styled.div`
 const ErrorMessage = styled.div`
   margin: 50px auto 0 auto;
   font-size: 36px;
+  font-weight: 500;
   width: fit-content;
   @media screen and (max-width: 1300px) {
     margin-top: 20px;

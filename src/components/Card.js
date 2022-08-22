@@ -16,7 +16,7 @@ const CardTitle = styled.div`
   margin: 20px;
   top: 82%;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: 500;
   height: 50px;
   display: flex;
   align-items: center;

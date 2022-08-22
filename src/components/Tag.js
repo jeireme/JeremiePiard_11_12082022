@@ -8,8 +8,10 @@ const TagContainer = styled.div`
   align-items: center;
   height: 25px;
   border-radius: 10px;
-  margin-right: 10px;
+  margin: 5px 10px 5px 0px;
   @media screen and (max-width: 800px) {
+    border-radius: 5px;
+    height: 20px;
     margin-right: 5px;
   }
 `;
@@ -21,10 +23,10 @@ const Name = styled.div`
   margin: 0 30px;
   width: fit-content;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
   white-space: nowrap;
   @media screen and (max-width: 800px) {
-    font-size: 13px;
+    font-size: 12px;
     margin: 0 20px;
   }
 `;

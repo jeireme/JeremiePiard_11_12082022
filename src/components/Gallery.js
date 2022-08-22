@@ -74,7 +74,7 @@ const IndexOfPictures = styled.div`
   color: white;
   z-index: 1;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 400;
   top: 93.55%;
   left: 50.8%;
   transform: translate(-100%, -100%);

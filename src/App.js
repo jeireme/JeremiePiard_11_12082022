@@ -10,10 +10,12 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const AppContainer = styled.div`
   color: #ff6060;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   max-width: 1240px;
   margin: auto;
   margin-top: 40px;
+  width: 100vw;
+  overflow-x: hidden;
 `;
 
 function App() {

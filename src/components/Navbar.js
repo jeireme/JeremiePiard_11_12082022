@@ -8,7 +8,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   margin: auto;
   padding: 0 20px;
   @media screen and (max-width: 1300px) {

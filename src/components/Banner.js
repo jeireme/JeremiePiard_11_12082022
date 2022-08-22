@@ -13,7 +13,7 @@ const BannerContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 500;
   margin: 50px auto 0 auto;
   color: white;
   width: 98%;

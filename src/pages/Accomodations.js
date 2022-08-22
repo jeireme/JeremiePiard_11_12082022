@@ -16,24 +16,29 @@ const FlexDropdownContainer = styled.div`
   margin: 0 auto 20px auto;
   width: 97%;
   @media screen and (max-width: 1300px) {
+    width: 82vw;
     margin-top: 30px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    @media screen and (max-width: 800px) {
+      width: 90vw;
+      margin-top: 40px;
+    }
   }
 `;
 
 const FlexTagsRatingContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto 20px auto;
   width: 97%;
   height: 40px;
   @media screen and (max-width: 1300px) {
     width: 82vw;
     @media screen and (max-width: 800px) {
-      height: 90px;
+      height: 60px;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
@@ -51,6 +56,7 @@ const FlexTitleProfileContainer = styled.div`
   @media screen and (max-width: 1300px) {
     width: 82vw;
     @media screen and (max-width: 800px) {
+      margin-top: -15px;
       width: 90vw;
       flex-direction: column;
     }
@@ -63,13 +69,19 @@ const TitleContainer = styled.div`
 
 const Title = styled.div`
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 500;
+  @media screen and (max-width: 800px) {
+    font-size: 22px;
+  }
 `;
 
 const Location = styled.div`
   margin-top: 5px;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
 const ProfileContainer = styled.div`
@@ -79,10 +91,10 @@ const ProfileContainer = styled.div`
   align-items: flex-end;
   @media screen and (max-width: 800px) {
     position: relative;
-    top: 20px;
+    top: -5px;
     left: 100%;
     transform: translate(-100%, 0);
-    margin-bottom: -100px;
+    margin-bottom: -110px;
   }
 `;
 
@@ -94,6 +106,11 @@ const Name = styled.div`
   text-align: right;
   width: 100px;
   height: fit-content;
+  @media screen and (max-width: 800px) {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
 `;
 
 const Picture = styled.div`
@@ -101,15 +118,23 @@ const Picture = styled.div`
   height: 64px;
   border-radius: 100px;
   background-size: cover;
+  @media screen and (max-width: 800px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
 
 const TagsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  height: 200px;
+  height: fit-content;
 `;
 
-const RateContainer = styled.div``;
+const RateContainer = styled.div`
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+  }
+`;
 
 const DropdownContainer = styled.div`
   margin-top: 0px;
@@ -117,9 +142,9 @@ const DropdownContainer = styled.div`
   min-height: 350px;
   @media screen and (max-width: 1300px) {
     min-height: inherit;
-    width: 83vw;
+    width: 100%;
     @media screen and (max-width: 800px) {
-      width: 96%;
+      margin-bottom: -10px;
     }
   }
 `;

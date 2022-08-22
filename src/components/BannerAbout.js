@@ -9,14 +9,8 @@ const BannerContainer = styled.div`
   background-repeat: no-repeat;
   background-size: 1365px;
   background-position: 20% 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  font-weight: 100;
   margin: 40px auto 30px auto;
   width: 98%;
-  color: white;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   @media screen and (max-width: 1300px) {
     width: 83vw;

@@ -8,7 +8,7 @@ const DropdownContainer = styled.div`
   margin: auto;
   margin-bottom: 30px;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 400;
   @media screen and (max-width: 1300px) {
     font-size: 20px;
   }
@@ -24,7 +24,7 @@ const TitleContainer = styled.div`
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     height: 20px;
   }
 `;
